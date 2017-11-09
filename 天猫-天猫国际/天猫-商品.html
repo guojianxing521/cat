@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天猫tmall.com--理想生活上天猫</title>
+	<link rel="shortcut icon" href="tianmao.ico">
+	<style>
+        * {
+        	margin: 0;
+        	padding: 0;
+        }
+        a {
+        	text-decoration: none;
+        }
+        a:hover {
+        	color: red;
+        }
+        ul {
+        	list-style: none;
+        }
+        input {
+        	border: 0;
+        }
+        body {
+        	background-color: #f4f1ec;
+        }
+        .w {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .t1 {
+        	height: 26px;
+        	background-color: #f2f2f2;
+        	border-bottom: 1px solid #e5e5e5;
+        }
+        .t1l {
+        	height: 26px;
+        	line-height: 26px;
+        	float: left;
+        }
+       /* .t1l ul {
+           float: left;
+        }*/
+        .t1l li {
+        	float: left;
+        	padding-right: 20px;
+        }
+        .t1 li a {
+        	font-size: 12px;
+        	color: #999999;
+        	font-weight: 400;
+        	font-family: '微软雅黑';
+        }
+        .t1 a:hover {
+        	color: red;
+        }
+        .t1l li img {
+        	padding-right: 2px;
+        }
+        .t1r {
+        	height: 26px;
+        	line-height: 26px;
+        	float: left;
+        	margin-left: 296px;
+        	
+        }
+        .t1r li {
+        	float: left;
+        	padding-right: 20px;
+        	position: relative;
+        }     
+        .t1r span {
+        	border: 3px solid #999999;
+        	border-color:#999999 transparent transparent transparent; 
+        	position: absolute;
+        	top: 12px;
+        	left: 50px;
+        	/*right: 0;*/
+        }
+        .t2 {
+            height: 45px;
+            margin-top: 16px;
+            background-color: #fff;
+        }
+        .t2-1 div {
+        	display: inline-block;
+        }
+        .t2l a {
+        	width: 122px;
+        	height: 45px;
+        	display: inline-block;        	
+        	background: url(images/logo.png) no-repeat;
+        	background-size: 118px;       
+        }
+        .t2-1 span {
+            display: inline-block;
+        	height: 45px;
+        	margin-left: 40px;
+        	border: 1px solid #f0f0f0;
+        }
+        .t2l-2 {
+        	width: 190px;
+        	height: 42px;
+        	position: relative;       	
+        }
+        .t2l-2-1  {
+           width: 50px;
+           height: 40px;
+           display: inline-block;
+           background: url(images/海外logo.png) center no-repeat;
+           background-size: 48px;
+           padding-left: 5px;
+           padding-bottom: 10px;
+        }
+        .t2l-2 a:nth-child(2) {
+        	width: 106px;
+        	position: absolute;
+        	top: 0;
+        	left: 56px; 
+        	font-size: 12px;
+        	font-weight: 700;
+        	color: #666;
+        }
+        .t2l-2 a:nth-child(2):hover {
+        	text-decoration: underline;
+        }
+        .t2l-2 span {
+        	position: absolute;
+        	left: 150px;
+        	top: 0;
+        }
+        .t2l-2 a:nth-child(3) {
+        	width: 100px;
+        	border: 1px solid #eae3fb;
+        	font-size: 8px;
+        	color: #7a45e5;
+        	position: absolute;
+        	bottom: 0;
+        	left: 56px; 
+        }
+        .t2l-2 img {
+        	position: absolute;
+        	left: 165px;
+        	bottom: 5px;
+        }
+        .t2l-3 {
+        	width: 142px;
+        	height: 42px;
+        	position: relative;
+        }
+        .t2l-3 b {
+        	letter-spacing: 8px;
+        	font-size: 12px;
+            font-weight: 400;
+            margin-left: 10px;
+            position: absolute;
+            top: -8px;
+            color: #999999;
+        }
+        .t2l-3 ul {
+        	margin-left: 12px;
+        	position: absolute;
+        	bottom: 10px;
+        }
+        .t2l-3 li {
+        	display: inline-block;
+        	font-weight: 400;
+        	color: red;        	
+        	font-size: 12px;
+        	margin-right: 2px;       	
+        }	
+        .t2l-3 em {
+        	font-style: normal;
+        	border: 3px solid #999999;
+        	border-color:#999999 transparent transparent transparent; 
+        	position: absolute;
+        	top: 15px;
+        	right: 0;
+        }
+        .t2l-3 span {
+        	position: absolute;
+        	left: 120px;
+        	bottom: 4px;
+        }
+        .t2l-4 {
+        	width: 50px;
+        	height: 42px;
+        	position: relative;
+        	/*margin-left: 20px;*/
+        }
+        .t2l-4 b {
+        	width: 40px;
+        	height: 14px;
+        	font-size: 12px;
+        	position: absolute;
+        	font-weight: 400;
+        	color: #999;
+        	top: -6px;
+        	left: 30px;
+        }
+        .t2l-4 a {
+        	display: inline-block;
+        	width: 20px;
+        	height: 20px;
+        	background-color: red;
+        	position: absolute;
+        	bottom: 7px;
+        	left: 35px;
+        }
+        .t2l-4 a span {
+        	border: 4px solid #999999;
+        	border-color:#999999 transparent transparent transparent; 
+        	position: absolute;
+        	left: -15px;
+        	top: 6px;
+        }
+        .t2r {
+        	width: 540px;
+        	height: 30px;
+        	float: right;
+            /*border: 2px solid #7a3ce9;*/
+            margin-top: 5px;
+        }
+        .t2r input {
+            height: 30px;             
+        }
+        .t2r :nth-child(1) {
+            width: 338px;
+            height: 26px;
+        	padding-left: 5px;
+        	border: 2px solid #7a3ce9;
+        	float: left;
+        }
+        .t2r :nth-child(2) {
+        	width: 112px;
+        	height: 30px;
+        	background-color: #7a3ce9;
+        	color: #fff;
+        	cursor: pointer;
+        	float: left;
+        }
+        .t2r :nth-child(3) {
+        	width: 80px;
+            float: right;
+            background-color: #333333;
+            color: #fff;
+            cursor: pointer;
+        }
+        .t3 {
+        	height: 152px;       	
+        	margin-top: 30px;
+        	background-color: #f6f5f0; 
+        	border-top: 1px solid #333; 
+        	position: relative;  	
+        }
+        .t3lo {
+        	height: 152px;
+        	background: url(images/英文logo.jpg) center no-repeat;
+        }
+        .t3lo-1 a {
+        	width: 290px;
+        	height: 60px;
+        	float: left;
+            /*border: 1px solid red;*/
+            margin-left: 130px;
+            margin-top: 28px;
+        }
+        .t3lo-2 a {
+        	width: 198px;
+        	height: 60px;
+        	float: left;
+            /*border: 1px solid red;*/
+            margin-top: 28px;
+        }
+        .t3lo-3 a {
+        	width: 90px;
+        	height: 90px;
+        	float: left;
+            /*border: 1px solid red;*/
+            border-radius: 50%;
+            margin-top: 7px;
+            margin-left: 92px;
+        }
+        .t3lo-4 a {
+        	width: 165px;
+        	height: 112px;
+        	float: left;
+            /*border: 1px solid red;*/
+            margin-left: 90px;
+        }
+        .t3lob {
+            position: absolute;
+            top: 122px;
+            left: 131px;
+        }
+        .t3lob  a {
+           font-size: 18px;
+           margin-right: 24px;
+           color: rgba(0,0,0,0);
+        }
+        .t4 {
+        	height: 1000px;	
+        	margin: 0 auto;
+        	position: relative;
+        	/*background: url(images/youhuiquan.jpg) center no-repeat ;
+            background-position: -300px 0;*/
+        }
+        .t4lo {
+        	/*border: 2px solid red;*/
+        	height: 1000px;
+        	line-height: 1000px;
+            background: url(images/youhuiquan.jpg) center no-repeat ;
+            /*background-position: 100px 0;*/
+        }
+        .t4lo-1 a{
+        	width: 500px;
+        	height: 620px;
+        	float: left;
+            margin-top: 30px;
+           /* border: 1px solid #000;*/
+        }
+        .t4lo-2 a{
+        	width: 250px;
+        	height: 112px;
+        	float: left; 
+        	/*border: 1px solid #000; */        
+        }
+        .t4lo-3 a{
+        	width: 224px;
+        	height: 130px;
+        	float: left; 
+        	/*border: 1px solid #000;*/ 
+        	margin-left: 200px;
+        	margin-top: 0;         
+        }
+        .t4lo-4 a{
+        	width: 120px;
+        	height: 490px;
+        	border-radius: 120px 0 0 0;
+        	float: right;
+        	position: absolute;
+        	right: 0;
+            top: 122px;
+        }
+        .t4lo-5 a{
+        	width: 276px;
+        	height: 194px;
+        	float: left;
+        	position: absolute;
+        	bottom: 328px;
+        	right: 225px;
+        	border-radius: 86px 108px 0 120px;          
+        }
+        .t4lo-6 ul {
+        	position: absolute;
+        	bottom: 105px;
+        	left: 60px;
+        }
+        .t4lo-6 ul li {
+        	float: left;
+        }
+        .t4lo-6 li a{
+        	width: 250px;
+        	height: 120px;
+        	display: block;    	         
+        }
+        .t4lo-6 li:nth-child(2) {
+        	margin-right: 24px;
+        }
+        .t5 {
+           height: 1098px;
+           /*border: 1px solid red;*/
+           position: relative;
+        }
+        .t5lo {
+        	height: 1098px;
+        	background: url(images/liage.jpg) no-repeat;
+        	background-position: -300px 0;
+        }
+        .t5lo-1 a {
+        	width: 780px;
+        	height: 462px;
+        	float: left;
+        	margin-top: 106px;
+        	margin-left: 138px;
+        }
+        .t5lo-2 a {
+        	width: 904px;
+        	height: 452px;
+        	float: left;
+        	margin-top: 38px;
+        	margin-left: 128px;
+        }
+        .t6 {
+        	height: 1110px;
+        	/*border: 1px solid red;*/
+        	position: relative;
+        }
+        .t6lo {
+        	height: 1110px;
+        	background: url(images/liahuo.jpg)  no-repeat;
+        	background-position: -300px 0;
+        }
+        .t6lo-1 a {
+        	width: 834px;
+        	height: 416px;
+        	float: left;
+        	margin-top: 55px;
+        	margin-left: 220px;
+        	/*border: 1px solid #000;*/
+        }
+        .t6lo-2 a {
+        	width: 822px;
+        	height: 470px;
+        	float: left;
+        	margin-top: 54px;
+        	margin-left: 288px;
+        	/*border: 1px solid #000;*/
+        }
+        .t7 {
+        	height: 1657px;
+            position: relative;
+           /* border: 1px solid #000;  */
+            overflow: hidden;
+        }
+        .t7lo {
+
+        	height: 1657px;
+        	background: url(images/huangjin.jpg) no-repeat;
+        	background-position: -300px 0;
+        }
+        .t7lo-1 ul {
+        	float: left;
+        	margin-top: 280px;
+        	margin-left: 180px;
+        	/*border: 1px solid #000;*/
+        }
+        .t7lo-1 li {
+        	float: left;
+        }
+        .t7lo-1 li a {
+        	width: 300px;
+        	height: 470px;
+        	display: block;
+        	/*border: 1px solid #000;*/
+        	margin-right: 30px;
+        }
+        .t7lo-2 a {
+        	width: 406px;
+        	height: 246px;
+        	/*border: 1px solid #000;*/
+        	position: absolute;
+        	bottom: 412px;
+        	left: 438px;
+        }
+        .t7lo-3 a {
+        	width: 200px;
+        	height: 150px;
+        	/*border: 1px solid #000;*/
+        	position: absolute;
+        	bottom: 435px;
+        	right: -178px;
+        }
+        .t7lo-4 a {
+        	width: 332px;
+        	height: 272px;
+        	/*border: 1px solid #000;*/
+        	position: absolute;
+        	bottom: 108px;
+        	right: 95px;
+        }
+        .t8 {
+        	height: 2397px;
+        	background: url(images/santu.jpg) no-repeat;
+        	background-position: -300px 0;
+        }
+    </style>
+</head><body>
+	<div class="t1">
+		<div class="t1-1 w">
+			<div class="t1l">
+			    <ul>			    
+			    	<li><img src="images/shouye.png" alt=""><a href="../天猫-主页/index.html">天猫首页</a></li>
+			    	<li><a href="#">喵，欢迎来天猫国际</a></li>
+			    	<li><a href="#">请登录</a></li>
+			    </ul>
+			</div>    
+			<div class="t1r">
+				<ul>
+					<li>
+					<a href="#">我的淘宝<span></span></a>
+					</li>
+					<li>
+					<img src="images/" alt="">
+					<a href="#">我关注的品牌</a>
+					</li>
+					<li>
+					<img src="images/" alt="">
+					<a href="#">购物车</a>
+					</li>
+					<li>
+					<img src="images/" alt="">
+					<a href="#">收藏夹<span></span></a>
+					</li>
+					<li>
+					<img src="images/" alt="">
+					<a href="#">手机版</a>
+					</li>
+					<li>
+					<img src="images/" alt="">
+					<a href="#">淘宝网</a>
+					</li>
+					<li>
+					<img src="images/" alt="">
+					<a href="#">商家支持<span></span></a>
+					</li>
+					<li><img src="images/" alt="">
+					<a href="#">网站导航<span></span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="t2">
+		<div class="t2-1 w">
+			<div class="t2l">
+				<a href="#"></a>
+				<span></span>				
+			</div>
+			<div class="t2l-2">
+				<a href="#" class="t2l-2-1"></a>
+				<a href="#">绮丽堂海外旗舰店</a>
+				<a href="#">天猫国际官方认可</a><img src="images/xiaoren.png" alt="">
+				<span></span>
+			</div>
+			<div class="t2l-3">
+			    <b>描述服务物流</b>
+			    <ul>
+			    	<li>4.8 <img src="images/jiantou.png" alt=""></li>
+			    	<li>4.8 <img src="images/jiantou.png" alt=""></li>
+			    	<li>4.8 <img src="images/jiantou.png" alt=""></li>
+			    </ul>
+			    <em></em>
+			    <span></span>
+			</div>
+			<div class="t2l-4">
+			    <b>手机逛</b>
+                <a href=""><span></span></a>				
+			</div>
+			<div class="t2r">
+				<input type="text" placeholder="搜索 天猫 商品/品牌/店铺">
+				<input type="button" value="搜索天猫国际">
+				<input type="button" value="搜本店">
+			</div>
+		</div>
+	</div>
+	<div class="t3">
+		<div class="t3lo w">
+			<div class="t3lo-1">
+				<a href="#"></a>
+			</div>
+			<div class="t3lo-2">
+				<a href="#"></a>
+			</div>
+			<div class="t3lo-3">
+				<a href="#"></a>
+			</div>
+			<div class="t3lo-4">
+				<a href="#"></a>
+			</div>
+		</div>
+		<div class="t3lob">
+			<a href="#">首页</a>
+			<a href="#">所有产品</a>
+			<a href="#">脸部清洁&护理</a>
+			<a href="#">身体脱发&瘦身</a>
+			<a href="#">喝水也能美容</a>
+			<a href="#">美肤精华液</a>
+			<a href="#">仪器选购指南</a>
+			<a href="#">关税风险</a>			
+		</div>
+	</div>
+	<div class="t4">
+		<div class="t4lo w">
+			<div class="t4lo-1">
+				<a href="#"></a>
+			</div>
+			<div class="t4lo-2">
+				<a href="#"></a>
+			</div>
+			<div class="t4lo-3">
+				<a href="#"></a>
+			</div>
+			<div class="t4lo-4">
+				<a href="#"></a>
+			</div>
+			<div class="t4lo-5">
+				<a href="#"></a>
+			</div>
+			<div class="t4lo-6">
+				<ul>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="t5">
+		<div class="t5lo w">
+			<div class="t5lo-1">
+				<a href="#"></a>
+			</div>
+			<div class="t5lo-2">
+				<a href="#"></a>
+			</div>
+		</div>
+	</div>
+	<div class="t6">
+		<div class="t6lo w">
+			<div class="t6lo-1">
+				<a href="#"></a>
+			</div>
+			<div class="t6lo-2">
+				<a href="#"></a>
+			</div>
+		</div>
+	</div>
+	<div class="t7">
+		<div class="t7lo w">
+			<div class="t7lo-1">
+			    <ul>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>					
+				</ul>
+			</div>
+			<div class="t7lo-2">
+				<a href="#"></a>
+			</div>
+			<div class="t7lo-3">
+				<a href="#"></a>
+			</div>
+			<div class="t7lo-4">
+				<a href="#"></a>
+			</div>
+		</div>
+	</div>
+	<div class="t8">
+		<div class="t8lo w">
+			<div class="t8lo-1">
+				<a href="#"></a>
+			</div>
+			<div class="t8lo-2">
+				<a href="#"></a>
+			</div>
+			<div class="t8lo-3">
+				<a href="#"></a>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	
+</script>
+</html>

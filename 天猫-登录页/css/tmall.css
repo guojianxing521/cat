@@ -1,0 +1,353 @@
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.w {
+			width: 1190px;
+			margin: 0 auto;
+		}
+		/*header 部分开始*/
+		
+		#header-in {
+			height: 88px;
+			background-color: #fff;
+			box-sizing: border-box;
+		}
+		
+		#header-in a {
+			display: block;
+			width: 190px;
+			height: 27px;
+		}
+		
+		#header-in img {
+			margin-top: 30px;
+		}
+		/*header 部分结束*/
+		/*banner 部分开始*/
+		
+		#banner {
+			background-color: rgb(247, 100, 191);
+		}
+		
+		#banner-in {
+			height: 600px;
+			background: url(../img/banner-1.jpg) no-repeat;
+			position: relative;
+		}
+		
+		#banner-in #dianjijinru {
+			display: block;
+			position: absolute;
+			top: 80px;
+			left: 75px;
+			width: 500px;
+			height: 500px;
+			border: none;
+			outline: none;
+		}
+		
+		#landing {
+			width: 350px;
+			height: 404px;
+			background-color: #FFF;
+			position: absolute;
+			right: 60px;
+			top: 90px;
+			box-sizing: border-box;
+		}
+		
+		#landing-in,
+		#landing-in2 {
+			width: 350px;
+			height: 345px;
+			position: relative;
+		}
+		/*扫码区域 部分开始*/
+		
+		#landing-in {
+			display: block;
+		}
+		/*登录指示框开始*/
+		
+		#tishikuang {
+			width: 143px;
+			height: 28px;
+			border: 1px solid #f3d995;
+			line-height: 16px;
+			padding: 5px 20px 5px 15px;
+			box-sizing: border-box;
+			background: #fefcee;
+			position: absolute;
+			top: -35px;
+			right: 58px;
+			font-size: 12px;
+			color: #DF9C1F;
+		}
+		/*登录指示框结束*/
+		
+		#landing-in h4 {
+			display: block;
+			margin: 40px 0 0 25px;
+			height: 18px;
+		}
+		
+		#landing-in-icon1 {
+			position: absolute;
+			top: -35px;
+			right: 3px;
+			cursor: pointer;
+		}
+		/*二维码部分 开始*/
+		
+		#erweima {
+			height: 190px;
+			width: 350px;
+			position: relative;
+		}
+		
+		#erweima img {
+			position: absolute;
+			top: 30px;
+			left: 100px;
+		}
+		
+		#tel-pic img {
+			position: absolute;
+			top: 30px;
+			left: 180px;
+			display: none;
+			opacity: 0.3;
+		}
+		/*二维码部分 结束*/
+		/*密码登录部分 开始*/
+		
+		#landing-in2 {
+			display: none;
+		}
+		
+		#tishikuang2 {
+			width: 143px;
+			height: 28px;
+			border: 1px solid #f3d995;
+			line-height: 16px;
+			padding: 5px 20px 5px 15px;
+			box-sizing: border-box;
+			background: #fefcee;
+			position: absolute;
+			top: -35px;
+			right: 63px;
+			font-size: 12px;
+			color: #DF9C1F;
+		}
+		
+		#denglu {
+			width: 300px;
+			height: 42px;
+			border-radius: 3px;
+			font-size: 16px;
+			color: #fff;
+			background-color: #FF0036;
+			text-align: center;
+			line-height: 42px;
+			cursor: pointer;
+			position: relative;
+			left: 30px;
+			top: 80px;
+		}
+		
+		#landing-in2 h4 {
+			display: block;
+			margin: 40px 0 0 25px;
+			height: 18px;
+		}
+		
+		#landing-in2-icon-1 {
+			position: absolute;
+			top: -35px;
+			right: 2px;
+			cursor: pointer;
+		}
+		
+		#input-1,
+		#input-2 {
+			width: 300px;
+			height: 42px;
+			font-size: 14px;
+			line-height: 18px;
+			position: relative;
+			left: 30px;
+		}
+		
+		#user,
+		#mima {
+			width: 38px;
+			height: 38px;
+			position: absolute;
+			left: 1px;
+			top: 1px;
+			background-color: #DDDDDD;
+		}
+		
+		#input-1 {
+			top: 30px;
+		}
+		
+		#input-2 {
+			top: 55px;
+		}
+		
+		#input-1 #user img,
+		#input-2 #mima img {
+			position: absolute;
+			left: 10px;
+			top: 7px;
+		}
+		
+		#input-1 input,
+		#input-2 input {
+			width: 300px;
+			height: 40px;
+			border: 1px solid #DDD;
+			box-sizing: border-box;
+			padding-left: 50px;
+			color: #9b9b9b;
+		}
+		
+		#input-1 #icon-x {
+			display: none;
+		}
+		
+		#input-1 #icon-x img {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+		
+		#forget {
+			position: absolute;
+			bottom: 75px;
+			right: 25px;
+		}
+		
+		#forget a {
+			text-decoration: none;
+			color: #9b9b9b;
+			font-size: 12px;
+		}
+		
+		#forget a:hover {
+			color: #FF335E;
+		}
+		/*密码登录部分 结束*/
+		/*扫码登录  开始*/
+		/* 字体描述部分 开始*/
+		
+		#tel-text {
+			height: 75px;
+			position: relative;
+		}
+		
+		#tel-text img {
+			position: absolute;
+			top: 22px;
+			left: 80px;
+		}
+		
+		#tel-text p {
+			display: block;
+			color: #9c9c9c;
+			font-size: 12px;
+			line-height: 18px;
+		}
+		
+		#tel-text-p {
+			position: absolute;
+			top: 20px;
+			left: 125px;
+		}
+		
+		#tel-text-d {
+			position: absolute;
+			bottom: 0;
+			right: 50px;
+		}
+		
+		#tel-text-p a {
+			text-decoration: none;
+			color: #FF0036;
+		}
+		
+		#tel-text-d a {
+			text-decoration: none;
+			color: #6C6C6C;
+		}
+		
+		#tel-text-d a:hover {
+			color: #FF335E;
+		}
+		/* 字体描述部分 结束*/
+		/*banner 部分结束*/
+		/*footer 部分开始*/
+		
+		footer {
+			margin-top: 35px;
+			height: 195px;
+		}
+		
+		#footer-in {
+			height: 135px;
+			text-align: left;
+		}
+		
+		#footer-in a {
+			font: 12px/25px "微软雅黑";
+			text-decoration: none;
+		}
+		
+		#footer-in a:hover {
+			text-decoration: underline;
+		}
+		
+		#footer-in p {
+			box-sizing: border-box;
+			display: block;
+		}
+		
+		#footer-in p a {
+			color: #000;
+			margin-right: 6px;
+		}
+		
+		#footer-in div a {
+			color: #999;
+			margin-right: 65px;
+		}
+		
+		#footer-in div {
+			height: 65px;
+			color: #666;
+			font: 12px/20px "微软雅黑";
+		}
+		
+		#footer-in div b {
+			font-weight: 400;
+		}
+		
+		#tel-tmall a {
+			position: relative;
+		}
+		
+		#tel-tmall img {
+			position: absolute;
+			top: -2px;
+			left: -20px;
+		}
+		
+		.about-tmall,
+		.friends-tmall {
+			height: 35px;
+			padding: 5px 0;
+		}
+		/*footer 部分开始*/

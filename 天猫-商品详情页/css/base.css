@@ -1,0 +1,45 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.w{
+	width:1190px;	
+	margin: 0 auto;
+}
+body {
+    font-size: 12px;
+    font-family: tahoma,arial,"\5FAE\8F6F\96C5\9ED1",sans-serif;
+
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+input{
+	outline: none;
+}
+a:hover{
+	color: #FF0036;
+	border-bottom: 1px solid #FF0036;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.clearfix {
+    *zoom: 1
+}
+.center-c-c .lun-x li.current{
+	background-color: #BF0000;
+}
+.fixed {
+    position: fixed;
+	top: 0;
+	left: 0px;
+}
